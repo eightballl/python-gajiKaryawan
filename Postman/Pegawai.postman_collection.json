@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "d0193a07-2352-4290-9e52-524613d30ff6",
+		"name": "Pegawai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23906057"
+	},
+	"item": [
+		{
+			"name": "Cek Gaji",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_pegawai",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/pegawai/cekGaji",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pegawai",
+						"cekGaji"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

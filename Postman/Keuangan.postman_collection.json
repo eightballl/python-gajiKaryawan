@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "a31c03ce-7d97-44ad-95dc-3a096d82e949",
+		"name": "Keuangan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23906057"
+	},
+	"item": [
+		{
+			"name": "Data Gaji",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/keuangan/datagaji",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"keuangan",
+						"datagaji"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input Gaji Pegawai",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_pegawai",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "lembur",
+							"value": "26",
+							"type": "text"
+						},
+						{
+							"key": "hari",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "bulan",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/keuangan/gaji",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"keuangan",
+						"gaji"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Gaji Pegawai",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_pegawai",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "lembur",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/keuangan/updategaji",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"keuangan",
+						"updategaji"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Gaji Pegawai",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_pegawai",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/keuangan/deletegaji",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"keuangan",
+						"deletegaji"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data Pegawai",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/keuangan/datapegawai",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"keuangan",
+						"datapegawai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rekap Laporan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/keuangan/datagaji",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"keuangan",
+						"datagaji"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

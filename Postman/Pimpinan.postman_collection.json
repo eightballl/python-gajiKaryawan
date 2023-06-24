@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "b78aca51-72f1-402a-b8c9-cbe4a012383b",
+		"name": "Pimpinan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23906057"
+	},
+	"item": [
+		{
+			"name": "Rekap Laporan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/pimpinan/laporan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"pimpinan",
+						"laporan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

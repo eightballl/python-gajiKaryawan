@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "f98ccd8d-0654-4e9b-bbc3-26296f4239f4",
+		"name": "Admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23906057"
+	},
+	"item": [
+		{
+			"name": "Data Pegawai",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah Pegawai",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_pegawai",
+							"value": "iqbal jajal meneh",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "pria",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "boyolaliaaa",
+							"type": "text"
+						},
+						{
+							"key": "no_hp",
+							"value": "980989",
+							"type": "text"
+						},
+						{
+							"key": "id_divisi",
+							"value": "DVS02",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data Pegawai",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_pegawai",
+							"value": "19",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Magersari, Boyolali",
+							"type": "text"
+						},
+						{
+							"key": "no_hp",
+							"value": "081573232437",
+							"type": "text"
+						},
+						{
+							"key": "id_divisi",
+							"value": "DVS01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data Pegawai",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_pegawai",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Divisi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/divisi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"divisi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah Divisi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_divisi",
+							"value": "DVS03",
+							"type": "text"
+						},
+						{
+							"key": "divisi",
+							"value": "Karyawan",
+							"type": "text"
+						},
+						{
+							"key": "gaji",
+							"value": "1500000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000//admin/add/divisi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"admin",
+						"add",
+						"divisi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Divisi",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_divisi",
+							"value": "DVS03",
+							"type": "text"
+						},
+						{
+							"key": "divisi",
+							"value": "Produksi",
+							"type": "text"
+						},
+						{
+							"key": "gaji",
+							"value": "3000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/update/divisi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"update",
+						"divisi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Divisi",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_divisi",
+							"value": "DVS03",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/delete/divisi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"delete",
+						"divisi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
